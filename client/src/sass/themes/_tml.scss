@@ -1,0 +1,22 @@
+// Shadows
+
+.add-light-shadow {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+}
+
+.add-medium-shadow {
+
+}
+
+// Main 
+
+.main {
+    background-color: $black;
+    min-height: 100vh;
+}
+
+// Fonts
+
+* {
+    font-family: $font-inter;
+}
