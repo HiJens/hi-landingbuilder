@@ -3,5 +3,13 @@
     &--text {
         display: flex;
         justify-content: center;
+
+        p {
+            color: $white;
+        }
+
+        .blur {
+            bottom: -980px;
+        }
     }
 }

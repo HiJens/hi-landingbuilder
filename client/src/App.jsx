@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import {
   BrowserRouter as Router,
@@ -11,7 +11,16 @@ import {
   Template
 } from './pages';
 
+import AOS from 'aos';
+
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    })
+  }, []);
+
   return (
     <Router>
       <Routes>

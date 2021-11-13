@@ -6,7 +6,7 @@ import {
 
 export default function Header({ nav, logo }) {
     return (
-        <header className="header add-light-shadow">
+        <header className="header add-light-shadow" data-aos="fade-down">
             <Link to="/" className="header-logo">
                 {logo}
             </Link>

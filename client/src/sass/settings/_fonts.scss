@@ -9,6 +9,21 @@ $h3-size: 35px;
 $h4-size: 25px;
 $h5-size: 18px;
 $h5-size: 16px;
+$p-size: 15px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    span {
+        background: -webkit-linear-gradient(45deg, #B92454, #E83871);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
 
 h1 {
     font-size: $h1-size;
@@ -44,4 +59,14 @@ h4 {
     font-size: $h4-size;
     font-weight: 400;
     color: $white;
+}
+
+p {
+    font-size: $p-size;
+    font-weight: 300;
+    line-height: 20px;
+
+    strong {
+        font-weight: 500;
+    }
 }

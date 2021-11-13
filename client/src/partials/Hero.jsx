@@ -2,11 +2,10 @@ export default function Hero({img, title, subtitle}) {
     return (
         <div className="hero">
             <div className="hero-container">
-                <h1 className="hero-title text-center add-font-medium-shadow">{title}</h1>
-                <h4 className="hero-subtitle text-center add-font-medium-shadow">{subtitle}</h4>
+                <h1 className="hero-title text-center add-font-medium-shadow" data-aos="fade-up">{title}</h1>
+                <h4 className="hero-subtitle text-center add-font-medium-shadow" data-aos="fade-up" data-aos-delay="300">{subtitle}</h4>
 
-                <div className="hero-more add-font-medium-shadow">
-                </div>
+                <div className="hero-more add-font-medium-shadow" data-aos="zoom-out-up" data-aos-delay="500"></div>
             </div>
 
             <svg width="1440" height="725" viewBox="0 0 1440 725" fill="none" xmlns="http://www.w3.org/2000/svg">
