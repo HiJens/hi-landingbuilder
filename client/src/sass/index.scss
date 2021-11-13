@@ -3,14 +3,16 @@
 
 // Settings
 @import './settings/reset';
+@import './settings/base';
 @import './settings/colors';
 @import './settings/fonts';
-@import './settings/base';
 
 // Components
 
 // Partials
 @import './partials/header';
+@import './partials/hero';
+@import './partials/blocks';
 
 // Themes
 @import './themes/tml';

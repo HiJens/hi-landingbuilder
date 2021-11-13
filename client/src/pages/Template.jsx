@@ -8,6 +8,13 @@ import {
     TML
 } from '../components';
 
+import { 
+    Hero, 
+    Text 
+} from '../partials';
+
+import HeroImg from '../assets/images/hero.jpg';
+
 export default function Template() {
     const [ firm, setFirm ] = useState('tomorrowland');
     const [ slug, setSlug ] = useState('incubator');
@@ -46,13 +53,34 @@ export default function Template() {
         },
     ];
 
+    const ContextTitle = () => {
+        return (
+            <h3>De <span>context</span></h3>
+        )
+    };
+
+    const ContextText = () => {
+        return (
+            <p></p>
+        )
+    };
+
     return (
         <BaseLayout
             theme={firm}
             logo={<TML />}
             nav={nav}
         >
-        
+            <Hero 
+                img={HeroImg}
+                title="Lab of Tomorrow"
+                subtitle="From idea to business model"
+            />
+
+            <Text 
+                title={ContextTitle}
+                text={ContextText}
+            />
         </BaseLayout>
     )
 };

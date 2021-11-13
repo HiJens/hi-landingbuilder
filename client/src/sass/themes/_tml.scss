@@ -5,7 +5,15 @@
 }
 
 .add-medium-shadow {
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
+}
 
+.add-font-light-shadow {
+    text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+}
+
+.add-font-medium-shadow {
+    text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
 }
 
 // Main 
@@ -19,4 +27,8 @@
 
 * {
     font-family: $font-inter;
+}
+
+.text-center {
+    text-align: center;
 }

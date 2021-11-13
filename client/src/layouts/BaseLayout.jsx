@@ -4,7 +4,7 @@ import {
     Header
 } from '../partials';
 
-export default function BaseLayout({ theme, logo, nav }) {
+export default function BaseLayout({ children, theme, logo, nav }) {
     return (
         <div className={`theme theme--${theme ?? 'default'}`}>
             <Header 
@@ -13,7 +13,7 @@ export default function BaseLayout({ theme, logo, nav }) {
             />
 
             <main className="main">
-
+                {children}
             </main>
         </div>
     )
