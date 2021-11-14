@@ -48,7 +48,7 @@
         justify-content: center;
         position: relative;
         z-index: 1;
-        max-width: 9760px;
+        max-width: 976px;
 
         &--small {
             max-width: 665px;
@@ -66,3 +66,4 @@
 
 @import "./blocks/text";
 @import "./blocks/partners";
+@import "./blocks/cards";

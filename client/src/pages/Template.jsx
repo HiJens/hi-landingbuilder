@@ -9,12 +9,14 @@ import {
 } from '../components';
 
 import { 
+    Cards,
     Hero, 
     Partners, 
     Text 
 } from '../partials';
 
 import HeroImg from '../assets/images/hero.jpg';
+import CardImg from '../assets/images/card.png';
 import StartItXImg from '../assets/images/startitx.jpeg';
 import Hoek76Img from '../assets/images/hoek76.jpeg';
 import StartItXLogo from '../assets/logos/startitx.png';
@@ -102,6 +104,30 @@ export default function Template() {
         )
     };
 
+    const CardsUpperlabel = () => {
+        return (
+            <span className="block-upperlabel text-center" data-aos="fade-up">Love tomorrow</span>
+        )
+    };
+
+    const CardsLabel = () => {
+        return (
+            <span className="block-label text-center" data-aos="fade-up">The holy grounds</span>
+        )
+    };
+
+    const CardsTitle = () => {
+        return (
+            <h3 className="block-title text-center" data-aos="fade-up">Duurzame lokale <span>verankering</span></h3>
+        )
+    };
+
+    const CardsText = () => {
+        return (
+            <p className="block-text text-center" data-aos="fade-up">Tomorrowland is Boom, Boom is Tomorrowland. Het Lab of Tomorrow wordt ingeplant op een site die grenst aan De Schorre, de heilige grond van het festival.</p>
+        )
+    };
+
     return (
         <BaseLayout
             theme={firm}
@@ -134,6 +160,38 @@ export default function Template() {
                     {
                         background: StartItXImg,
                         logo: StartItXLogo
+                    },
+                ]}
+            />
+
+            <Cards 
+                upperlabel={CardsUpperlabel}
+                label={CardsLabel}
+                title={CardsTitle}
+                text={CardsText}
+                cards={[
+                    {
+                        type: "default",
+                        title: () => {return <h4 className="card-title">Wat met <span>de impact?</span></h4>},
+                        text: "Het ambitieuze plan om het Silicon Valley van de event-sector in te planten aan de Rupel zal een enorme boost betekenen op het vlak van duurzame werkgelegenheid en perceptie van de regio.",
+                        size: "7",
+                    },
+                    {
+                        type: "default",
+                        title: () => {return <h4 className="card-title">Wat met <span>de vibe?</span></h4>},
+                        text: "Start-ups en vooral de grotere spelers op de site zullen als een magneet werken op andere bedrijven en leveranciers (horeca etc) die deel willen zijn van de nieuwe vibe.",
+                        size: "5",
+                    },
+                    {
+                        type: "default",
+                        title: () => {return <h4 className="card-title">Wat met <span>de regio?</span></h4>},
+                        text: "De lokale verankering en het op sleeptouw nemen van de buurt is essentieel in het opzet van dit plan. WaoW bevestigt op die manier zijn visie en engagement naar Boom, Rumst en Vlaanderen.",
+                        size: "5",
+                    },
+                    {
+                        type: "image",
+                        img: CardImg,
+                        size: "7",
                     },
                 ]}
             />
