@@ -10,10 +10,15 @@ import {
 
 import { 
     Hero, 
+    Partners, 
     Text 
 } from '../partials';
 
 import HeroImg from '../assets/images/hero.jpg';
+import StartItXImg from '../assets/images/startitx.jpeg';
+import Hoek76Img from '../assets/images/hoek76.jpeg';
+import StartItXLogo from '../assets/logos/startitx.png';
+import Hoek76Logo from '../assets/logos/hoek76.png';
 
 export default function Template() {
     const [ firm, setFirm ] = useState('tomorrowland');
@@ -73,6 +78,30 @@ export default function Template() {
         )
     };
 
+    const PartnersUpperlabel = () => {
+        return (
+            <span className="block-upperlabel text-center" data-aos="fade-up">Live today</span>
+        )
+    };
+
+    const PartnersLabel = () => {
+        return (
+            <span className="block-label text-center" data-aos="fade-up">Het plan</span>
+        )
+    };
+
+    const PartnersTitle = () => {
+        return (
+            <h3 className="block-title text-center" data-aos="fade-up"><span>Efficiënt</span> en <span>kwaliteit</span></h3>
+        )
+    };
+
+    const PartnersText = () => {
+        return (
+            <p className="block-text text-center" data-aos="fade-up">Samen met partners Start-it X en Hoek 76 zal al in het voorjaar van 2022 van start gegaan worden met het Lab of Tomorrow.</p>
+        )
+    };
+
     return (
         <BaseLayout
             theme={firm}
@@ -89,6 +118,24 @@ export default function Template() {
                 title={ContextTitle}
                 text={ContextText}
                 id="context"
+            />
+
+            <Partners 
+                id="pijlers"
+                upperlabel={PartnersUpperlabel}
+                label={PartnersLabel}
+                title={PartnersTitle}
+                text={PartnersText}
+                partners={[
+                    {
+                        background: Hoek76Img,
+                        logo: Hoek76Logo
+                    },
+                    {
+                        background: StartItXImg,
+                        logo: StartItXLogo
+                    },
+                ]}
             />
         </BaseLayout>
     )

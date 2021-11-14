@@ -25,7 +25,7 @@ export default function Hero({img, title, subtitle}) {
                 </defs>
             </svg>
 
-            <img className="hero-img" src={img} alt="hero-image" />
+            <img className="hero-img" src={img} alt="hero" />
         </div>
     )
 };

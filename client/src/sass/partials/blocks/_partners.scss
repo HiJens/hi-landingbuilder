@@ -1,0 +1,40 @@
+.block {
+
+    &--partners {
+
+        .partner {
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+            position: relative;
+            border-radius: 20px;
+
+            &-logo {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                z-index: 2;
+            }
+
+            &-bg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &::after {
+                content: '';
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: $black;
+                opacity: .8;
+            }
+        }
+    }
+}
