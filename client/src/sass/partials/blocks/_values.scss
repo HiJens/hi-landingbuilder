@@ -1,0 +1,24 @@
+.block {
+
+    &--values {
+        display: flex;
+        flex-wrap: wrap;
+
+        .value {
+            background-color: $white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            margin: 5px 5px 5px 0;
+            font-size: 15px;
+            font-family: $font-inter;
+            font-weight: 600;
+            display: inline-flex;
+
+            span {
+                background: -webkit-linear-gradient(45deg, #B92454, #E83871);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}

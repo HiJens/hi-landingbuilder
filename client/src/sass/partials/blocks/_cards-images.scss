@@ -1,29 +1,21 @@
 .block {
 
-    &--cards {
+    &--cards-images {
+
+        .block-label {
+            opacity: 1 !important;
+        }
 
         .card {
             border-radius: 20px;
-            min-height: 275px;
+            min-height: 375px;
             overflow: hidden;
+            height: 100%;
 
             &-title {
-                color: $black;
+                color: $white;
                 font-weight: 600;
                 margin-bottom: 20px;
-            }
-
-            ul {
-                list-style-type: circle;
-                color: $white;
-                padding-left: 20px;
-            }
-
-            strong {
-                background: -webkit-linear-gradient(45deg, #B92454, #E83871);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: 600;
             }
 
             &-blur {
@@ -37,18 +29,11 @@
             &--black {
                 background: $black;                
                 border: 1px solid #343434;
+                box-sizing: border-box;                
                 box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+                border-radius: 20px;
                 padding: 40px;
                 color: $white;
-
-                .card-title {
-                    color: $white;
-                }
-            }
-
-            &--white {
-                background-color: $white;
-                padding: 40px;
             }
 
             &--image {

@@ -1,9 +1,11 @@
 import Header from './Header';
 import Hero from './Hero';
+import Footer from './Footer';
 
 export * from './blocks';
 
 export {
     Header,
-    Hero
+    Hero,
+    Footer
 };

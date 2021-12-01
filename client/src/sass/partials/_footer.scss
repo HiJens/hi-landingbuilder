@@ -1,0 +1,30 @@
+.footer {
+    background-color: $black;
+    padding: 30px 20px;
+
+    &-wrapper {
+        max-width: 1200px;
+        margin: auto;
+        width: 100%;
+        background-color: $white;
+        border-radius: 80px;
+    }
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px 10px 10px;
+    }
+
+    &-button {
+        background: #EDEDED;
+        border-radius: 50px;
+        color: $black;
+        font-weight: 600;
+        font-family: $font-inter;
+        padding: 15px 20px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+}

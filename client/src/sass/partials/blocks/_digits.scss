@@ -1,0 +1,106 @@
+.block {
+
+    &--digits {
+
+        .digit {
+
+            &-keys {
+                margin-top: 30px;
+
+                &-row {
+                    margin-bottom: 20px;
+                }
+
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 0;
+                    position: relative;
+
+                    
+
+                    h4 {
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+
+                    &-label {
+                        color: $white;
+                        font-family: $font-inter;
+                        font-size: 15px;
+                        font-weight: 300;
+                        margin-top: 5px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: 1px;
+                        background-color: $white;
+                        height: 100%;
+                    }
+
+                    &-key {
+                        width: 50%;
+                        display: flex;
+                        align-items: flex-end;
+                        flex-direction: column;
+                        padding-right: 30px;
+                    }
+
+                    &-value {
+                        width: 50%;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        padding-left: 30px;
+                    }
+                }
+            }
+
+            &-years {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &-title {
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: $white;
+                    opacity: 0.4 !important;
+                }
+
+                &-wrapper {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            &-year {
+                background: #181818;
+                border: 1px solid #343434;
+                box-sizing: border-box;
+                border-radius: 50px;
+                color: $white;
+                padding: 20px 40px;
+                font-weight: 600;
+                margin: 10px;
+
+                &--current {
+                    box-shadow: 0px 0px 45px rgba(185, 36, 84, 0.4);
+                    opacity: .4;
+                }
+            }
+        }
+    }
+}
