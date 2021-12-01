@@ -44,7 +44,7 @@ export default function Scenarios({ id, upperlabel, title, scenarios, cards }) {
                                             )
                                         }
                                         <div key={index} data-aos="fade-up" className={`scenario-card${index === active ? " active" : ""}`}>
-                                            <span className="scenario-card-title">Overzicht</span>
+                                            <span className="scenario-card-title">Summary</span>
                                             <div key={index} className="scenario-row">
                                                 {
                                                     scenario.pricing.map((row, index) => {

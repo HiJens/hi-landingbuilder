@@ -8,6 +8,7 @@ import Profiles from "./Profiles";
 import Values from "./Values";
 import Scenarios from "./Scenarios";
 import Chart from "./Chart";
+import PossiblePartners from './PossiblePartners';
 
 export {
     Text,
@@ -19,5 +20,6 @@ export {
     Profiles,
     Values,
     Scenarios,
-    Chart
+    Chart,
+    PossiblePartners
 };

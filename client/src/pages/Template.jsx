@@ -19,7 +19,8 @@ import {
     Profiles,
     Values,
     Scenarios,
-    Chart
+    Chart,
+    PossiblePartners
 } from '../partials';
 
 import HeroImg from '../assets/images/hero.jpg';
@@ -210,6 +211,12 @@ export default function Template() {
     const ChartTitle = () => {
         return (
             <h3 className="block-title text-center" data-aos="fade-up">De <span>tijdlijn</span></h3>
+        )
+    };
+
+    const PossiblePartnersTitle = () => {
+        return (
+            <h3 className="block-title text-center" data-aos="fade-up">De <span>partners</span></h3>
         )
     };
 
@@ -968,14 +975,14 @@ export default function Template() {
                             ],
                         },
                         {
-                            title: "Voorwaarden",
+                            title: "Terms & conditions",
                             icon: "🤔",
                             requirements: true,
                             content: () => {
                                 return (
                                     <div className="card-content">
                                         <span className="card-title">
-                                            Voorwaarden
+                                            Terms & conditions
                                         </span>
                                         <br />
                                         <ul>
@@ -1206,6 +1213,116 @@ export default function Template() {
                     "Doorbreken van war on talent",
                     "Unieke setting en omgeving om in te werken",
                     "Link met universiteiten",
+                ]}
+            />
+
+            <PossiblePartners
+                title={PossiblePartnersTitle}
+                partners={[
+                    {
+                        name: "Accenture",
+                        active: true
+                    },
+                    {
+                        name: "KBC",
+                        active: true
+                    },
+                    {
+                        name: "CareVolution",
+                        active: false
+                    },
+                    {
+                        name: "Comate",
+                        active: true
+                    },
+                    {
+                        name: "DPG Media",
+                        active: false
+                    },
+                    {
+                        name: "DQS Mgmt Systems",
+                        active: false
+                    },
+                    {
+                        name: "DevoTeam",
+                        active: false
+                    },
+                    {
+                        name: "GigHouse",
+                        active: false
+                    },
+                    {
+                        name: "IPGevers",
+                        active: true
+                    },
+                    {
+                        name: "Growforce",
+                        active: false
+                    },
+                    {
+                        name: "Hubspot for Startups",
+                        active: false
+                    },
+                    {
+                        name: "Mensura",
+                        active: false
+                    },
+                    {
+                        name: "Monard Law",
+                        active: true
+                    },
+                    {
+                        name: "Moore",
+                        active: true
+                    },
+                    {
+                        name: "Netwerk Ondernemen",
+                        active: false
+                    },
+                    {
+                        name: "Oracle",
+                        active: false
+                    },
+                    {
+                        name: "Partnena",
+                        active: false
+                    },
+                    {
+                        name: "Premium Plus",
+                        active: true
+                    },
+                    {
+                        name: "Rubicon",
+                        active: false
+                    },
+                    {
+                        name: "Software Captains",
+                        active: false
+                    },
+                    {
+                        name: "This Might Work",
+                        active: false
+                    },
+                    {
+                        name: "UxPro",
+                        active: false
+                    },
+                    {
+                        name: "VLAIO",
+                        active: false
+                    },
+                    {
+                        name: "VentureCampus",
+                        active: false
+                    },
+                    {
+                        name: "VITO",
+                        active: false
+                    },
+                    {
+                        name: "Volta Ventures",
+                        active: false
+                    },
                 ]}
             />
 
