@@ -109,11 +109,13 @@ export default function Scenarios({ id, upperlabel, title, scenarios, cards }) {
 
                         <div className="col-xs-12 col-md-4">
                             {
-                                cards.map((card, index) => {
-                                    return (
-                                        <div className="card card--black" data-aos="fade-up" key={index}>
-                                            {card.content()}
+                                scenarios.map((scenario, index) => {
+                                    return scenario.introduction && active === index ? (
+                                        <div className="scenario-card scenario-card--black" data-aos="fade-up">
+                                            {scenario.introduction()}
                                         </div>
+                                    ) : (
+                                        ""
                                     )
                                 })
                             }

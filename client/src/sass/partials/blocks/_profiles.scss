@@ -37,7 +37,16 @@
 
                 h4 {
                     font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                &-values {
                     margin-bottom: 30px;
+
+                    span {
+                        color: $white;
+                        font-size: 15px;
+                    }
                 }
 
                 &-traits {

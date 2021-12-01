@@ -10,17 +10,6 @@ export default function Digits({id, title, label, years, digits}) {
                             {label}
                         </span>
 
-                        {/* <div className="digit-years-wrapper">
-                            {
-                                years && years.map((year, index) => {
-                                    return (
-                                        <div key={ index } data-aos="fade-up" data-aos-delay={index * 200} className={`digit-year${ year.current ? " digit-year--current" : "" }`}>
-                                            {year.year}
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div> */}
                     </div>
 
                     <div className="digit-keys">

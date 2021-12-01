@@ -38,7 +38,7 @@ import Hoek76Logo from '../assets/logos/hoek76.png';
 export default function Template() {
     const [ firm, setFirm ] = useState('tomorrowland');
     const [ slug, setSlug ] = useState('incubator');
-    const [ access, setAccess ] = useState(false);
+    const [ access, setAccess ] = useState(true);
     const [ password, setPassword ] = useState(false);
 
     const pass = "TMLxHinnovation987676!";
@@ -380,11 +380,6 @@ export default function Template() {
                             total: false,
                             digits: [
                                 {
-                                    digit: "400.000",
-                                    title: "Gebouw",
-                                    label: ""
-                                },
-                                {
                                     digit: "140.000",
                                     title: "Aankleding",
                                     label: "1,4m over 10 jaar"
@@ -429,7 +424,7 @@ export default function Template() {
                         {
                             total: true,
                             title: "Totaal",
-                            digit: "748.000",
+                            digit: "348.000",
                         }
                     ]
                 }}
@@ -443,6 +438,30 @@ export default function Template() {
                         {
                             title: "Start It model",
                             icon: "🥉",
+                            introduction: () => {
+                                return (
+                                    <div className="card-content">
+                                        <p>
+                                            <span className="card-title">
+                                                Introduction
+                                            </span>
+                                            We introduce a theme, i.e. EventTech as one of the focus areas in the running campaign. We define the selection criteria (to be used also during pitch). We add a small set of specific criteria to the selection process (i.e. conditional: if sector is EventTech - additional questions need to be completed). 
+                                            <br />
+                                            <br />
+                                            Estimates for a single pitch day. This includes invites, mailings to board members, ... Start it X provides a pitch moderator and one expert in the board. The pitch moderator provides personal feedback to those not selected ; and there is of course a follow-up to those selected. 50 EUR/jury member.
+                                            <br />
+                                            <br />
+                                            In this scenario, EventTech startups go along with the Program flow ; we include two dedicated inspiration sessions for EventTech startups.
+                                            <br />
+                                            <br />
+                                            In this scenario, we foresee 3 specific Expert sessions for the EventTech startups. Included in the Program Mgr in Residence who will also coach the startups. In this scenario, 2 Networking Nights and 2 Special Interest Group events for the EventTech startups.
+                                            <br />
+                                            <br />
+                                            There is a specific boardroom (board members, dedicated time slots) but running in a similar fashion as the other Boardrooms. Board president: Start it X to follow the playbook! Assumption: 1 Board dedicated to the program.
+                                        </p>
+                                    </div>
+                                )
+                            },
                             pricing: [
                                 {
                                     title: "", 
@@ -594,6 +613,31 @@ export default function Template() {
                         {
                             title: "Start It x TML model",
                             icon: "🥈", 
+                            introduction: () => {
+                                return (
+                                    <div className="card-content">
+                                        <p>
+                                            <span className="card-title">
+                                                Introduction
+                                            </span>
+                                            We introduce a theme, i.e. EventTech as one of the focus areas in the running campaign. We define the selection criteria (to be used also during pitch). We add a small set of specific criteria to the selection process (i.e. conditional: if sector is EventTech - additional questions need to be completed). 
+                                            <br />
+                                            <br />
+                                            Estimates for a single pitch day. This includes invites, mailings to board members, ... Start it X provides a pitch moderator and one expert in the board. The pitch moderator provides personal feedback to those not selected ; and there is of course a follow-up to those selected. 50 EUR/jury member.
+                                            <br />
+                                            <br />
+                                            In this scenario, we organise a specific day for the EventTech startups, at the TML co-working location. We include a budget for contacting & inviting experts specific for the Event Tech cohort.
+
+                                            <br />
+                                            <br />
+                                            In this scenario, we foresee 6 specific Expert sessions for the EventTech startups. Included in the Program Mgr in Residence who will also coach the startups. In this scenario, 2 Networking Nights and 4 Special Interest Group events for the EventTech startups
+                                            <br />
+                                            <br />
+                                            There is a specific boardroom (board members, dedicated time slots) but running in a similar fashion as the other Boardrooms. Board president: Start it X to follow the playbook! Assumption: 1 Board dedicated to the program. A specific section on EventTech startups is added to the Graduation Ceremony.
+                                        </p>
+                                    </div>
+                                )
+                            },
                             pricing: [
                                 {
                                     title: "", 
@@ -745,6 +789,27 @@ export default function Template() {
                         {
                             title: "TML model",
                             icon: "🥇",
+                            introduction: () => {
+                                return (
+                                    <div className="card-content">
+                                        <p>
+                                            <span className="card-title">
+                                                Introduction
+                                            </span>
+                                            We develop a custom questionnaire for the EventTech startups. We create a separate cohort within the platform for the Event Tech startups, with specific maturity model.
+                                            <br />
+                                            <br />
+                                            In this scenario, we organise a specific day for the EventTech startups, at the TML co-working location. We include a budget for contacting & inviting experts specific for the Event Tech cohort.
+                                            <br />
+                                            <br />
+                                            In this scenario, we foresee 6 specific Expert sessions for the EventTech startups. Included in the Program Mgr in Residence who will also coach the startups. In this scenario, 2 Networking Nights and 4 Special Interest Group events for the EventTech startups.
+                                            <br />
+                                            <br />
+                                            There is a specific boardroom (board members, dedicated time slots) but running in a similar fashion as the other Boardrooms. Board president: Start it X to follow the playbook! Assumption: 1 Board dedicated to the program.
+                                        </p>
+                                    </div>
+                                )
+                            },
                             pricing: [
                                 {
                                     title: "", 
@@ -936,76 +1001,39 @@ export default function Template() {
                                                 2 cohorts/year; if more wanted only sc.3 and to be discussed
                                             </li>
                                         </ul>
+                                        <br />
+                                        <br />
+
+                                        <span className="card-title">
+                                            To be included in the set-up cost
+                                        </span>
+
+                                        <br />
+                                        <span className="card-subtitle">Expert fee</span>
+                                        <p>Included in the day tariffs & team support</p>
+                                        <br />
+                                        <br />
+
+                                        <span className="card-subtitle">Accelerator app, user license</span>
+                                        <p>Yearly fee</p>
+                                        <br />
+                                        <div className="card-traits">
+                                            <span>€ 870</span>
+                                        </div>
+
+                                        <span className="card-subtitle">Tools set-up</span>
+                                        <p>One time set-up costs to onboard, inform & instruct TML users</p>
+                                        <br />
+                                        <div className="card-traits">
+                                            <span>40 hours</span>
+                                            <span>€ 4.250</span>
+                                        </div>
                                     </div>
                                 )
                             }
                         }
                     ]
                 }
-                cards={[
-                    {
-                        content: () => {
-                            return (
-                                <div className="card-content">
-                                    <span className="card-title">Rollen en tarieven</span>
-                                    <br />
-                                    <span className="card-subtitle">Program Manager</span>
-                                    <div className="card-traits">
-                                        <span>€ 800 min.day</span>
-                                        <span>€ 100 min.hour</span>
-                                        <span>€ 950 max.day</span>
-                                        <span>€ 118.75 max.hour</span>
-                                    </div>
-
-                                    <span className="card-subtitle">Office Manager</span>
-                                    <div className="card-traits">
-                                        <span>€ 450 min.day</span>
-                                        <span>€ 56.25 min.hour</span>
-                                        <span>€ 600 max.day</span>
-                                        <span>€ 75 max.hour</span>
-                                    </div>
-
-                                    <span className="card-subtitle">Project Manager</span>
-                                    <div className="card-traits">
-                                        <span>€ 800 min.day</span>
-                                        <span>€ 100 min.hour</span>
-                                        <span>€ 850 max.day</span>
-                                        <span>€ 106.25 max.hour</span>
-                                    </div>
-                                </div>
-                            )
-                        }
-                    },
-                    {
-                        content: () => {
-                            return (
-                                <div className="card-content">
-                                    <span className="card-title">To be included in the set-up cost</span>
-                                    <br />
-                                    <span className="card-subtitle">Expert fee</span>
-                                    <p>Included in the day tariffs & team support</p>
-                                    <br />
-                                    <br />
-
-                                    <span className="card-subtitle">Accelerator app, user license</span>
-                                    <p>Yearly fee</p>
-                                    <br />
-                                    <div className="card-traits">
-                                        <span>€ 870</span>
-                                    </div>
-
-                                    <span className="card-subtitle">Tools set-up</span>
-                                    <p>One time set-up costs to onboard, inform & instruct TML users</p>
-                                    <br />
-                                    <div className="card-traits">
-                                        <span>40 hours</span>
-                                        <span>€ 4.250</span>
-                                    </div>
-                                </div>
-                            )
-                        }
-                    }
-                ]}
             />
 
             <Profiles
@@ -1014,6 +1042,9 @@ export default function Template() {
                     {
                         title: "Program Manager",
                         image: ProgramManagerImg,
+                        values: [
+                            "€ 800 min.day", "€ 100 min.hour", "€ 950 max.day", "€ 118.75 max.hour"
+                        ],
                         traits: [
                             "Recruit and manage partners specific to this program",
                             "Connect with the Start It Team to align",
@@ -1034,6 +1065,9 @@ export default function Template() {
                     {
                         title: "Office Manager",
                         image: OfficeManagerImg,
+                        values: [
+                            "€ 450 min.day", "€ 56.25 min.hour", "€ 600 max.day", "€ 75 max.hour"
+                        ],
                         traits: [
                             "Manage all office resources, like printer paper, lights and desks",
                             "Be the SPOC for all things practical",
@@ -1054,6 +1088,9 @@ export default function Template() {
                     {
                         title: "Project Manager",
                         image: ProjectManagerImg,
+                        values: [
+                            "€ 800 min.day", "€ 100 min.hour", "€ 850 max.day", "€ 106.25 max.hour"
+                        ],
                         traits: [
                             "Connect all key stakeholders during the set-up & preparation of the project/program",
                             "Make sure all activities run timely within budget",

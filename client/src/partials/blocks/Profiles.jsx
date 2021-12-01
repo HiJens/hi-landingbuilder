@@ -14,9 +14,20 @@ export default function Profiles({id, title, profiles}) {
                                     </div>
 
                                     <div className="profile-content">
-                                        <h4 className="profile-content-title" data-aos="fade-up">
-                                            {profile.title}
-                                        </h4>
+                                        <div className="profile-content-title-wrapper">
+                                            <h4 className="profile-content-title" data-aos="fade-up">
+                                                {profile.title}
+                                            </h4>
+                                            <div className="profile-content-values" data-aos="fade-up">
+                                                {
+                                                    profile.values.map((value, index) => {
+                                                        return (
+                                                            <span key={index}>{value} {index === profile.values.length - 1 ? '' : ' | '} </span>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
+                                        </div>
 
                                         <div className="profile-content-traits">
                                             {
