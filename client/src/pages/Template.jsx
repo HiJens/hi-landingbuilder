@@ -348,7 +348,7 @@ export default function Template() {
                 ]}
             />
 
-            <Digits
+            {/* <Digits
                 id="cijfers"
                 title={DigitsTitle}
                 label="Jaarlijkse kost voor komende jaren"
@@ -379,6 +379,11 @@ export default function Template() {
                         {
                             total: false,
                             digits: [
+                                {
+                                    digit: "400.000",
+                                    title: "Gebouw",
+                                    label: ""
+                                },
                                 {
                                     digit: "140.000",
                                     title: "Aankleding",
@@ -424,20 +429,22 @@ export default function Template() {
                         {
                             total: true,
                             title: "Totaal",
-                            digit: "348.000",
+                            digit: "748.000",
                         }
                     ]
                 }}
-            />
+            /> */}
 
             <Scenarios
                 upperlabel={ScenariosUpperlabel}
                 title={ScenariosTitle}
+                id="cijfers"
                 scenarios={
                     [
                         {
                             title: "Start It model",
                             icon: "🥉",
+                            general: "Full integration in the current program (duration, coaching, academy, community events) & campaign (themed experience conform the overall Program); with an Event Tech theme & selection for Event Tech",
                             introduction: () => {
                                 return (
                                     <div className="card-content">
@@ -613,6 +620,7 @@ export default function Template() {
                         {
                             title: "Start It x TML model",
                             icon: "🥈", 
+                            general: "The program is still integrated in the overall program, but we add more specific flavours to the program to accomodate the EventTech startups.",
                             introduction: () => {
                                 return (
                                     <div className="card-content">
@@ -789,6 +797,7 @@ export default function Template() {
                         {
                             title: "TML model",
                             icon: "🥇",
+                            general: "Custom Service Offering ; in this case we also evaluate the length, key moments of the program to customise for TML and EventTech startups.",
                             introduction: () => {
                                 return (
                                     <div className="card-content">

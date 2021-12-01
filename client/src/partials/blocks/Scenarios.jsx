@@ -28,6 +28,21 @@ export default function Scenarios({ id, upperlabel, title, scenarios, cards }) {
                             {
                                 scenarios.map((scenario, index) => {
                                     return active === index ? !scenario.requirements ? (
+                                        <>
+                                        {
+                                            scenario.general && (
+                                                <div className="scenario-card scenario-card--black scenario-card--top" data-aos="fade-up">
+                                                    <div className="card-content">
+                                                        <span className="card-title">
+                                                            About scenario {index + 1}
+                                                        </span>
+                                                        <p>
+                                                            {scenario.general}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
                                         <div key={index} data-aos="fade-up" className={`scenario-card${index === active ? " active" : ""}`}>
                                             <span className="scenario-card-title">Overzicht</span>
                                             <div key={index} className="scenario-row">
@@ -98,6 +113,7 @@ export default function Scenarios({ id, upperlabel, title, scenarios, cards }) {
                                                 }
                                             </div>
                                         </div>
+                                        </>
                                     ) : (
                                         <div key={index} data-aos="fade-up" className={`scenario-card scenario-card--black${index === active ? " active" : ""}`}>
                                             {scenario.content()}
