@@ -39,7 +39,7 @@ import Hoek76Logo from '../assets/logos/hoek76.png';
 export default function Template() {
     const [ firm, setFirm ] = useState('tomorrowland');
     const [ slug, setSlug ] = useState('incubator');
-    const [ access, setAccess ] = useState(true);
+    const [ access, setAccess ] = useState(false);
     const [ password, setPassword ] = useState(false);
 
     const pass = "TMLxHinnovation987676!";
