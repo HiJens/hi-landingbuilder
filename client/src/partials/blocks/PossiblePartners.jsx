@@ -9,14 +9,14 @@ export default function PossiblePartners({ id, title, partners }) {
                 {title()}
                 
                 <div className="partners-button">
-                    <span onClick={() => setShowPossible(!showPossible)}>{showPossible ? 'Hide possible partners' : 'Show possible partners'}</span>
+                    <span className={showPossible ? 'show-button' : 'hide-button'} onClick={() => setShowPossible(!showPossible)}><strong>{showPossible ? 'Hide possible partners' : 'Show possible partners'}</strong></span>
                 </div>
 
                 <div className="partners-container">
                     {
                         partners.map((partner, index) => {
                             return (
-                                <span key={index} className={`partner${ !partner.possible ? showPossible ? ' fade-down' : '' : ''  }`}>
+                                <span key={index} className={`partner${ showPossible ? partner.active ?  ' possible' : '' : ''  }`}>
                                     {partner.name}
                                 </span>
                             )

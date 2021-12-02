@@ -1,0 +1,59 @@
+.block {
+
+    &--possible-partners {
+
+        .partners {
+
+            &-button {
+                display: flex;
+                justify-content: center;
+
+                span {
+                    cursor: pointer;
+                    padding: 15px 20px;
+                    border-radius: 30px;
+                    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+                    transition: ease-in-out .5s;
+
+                    strong {
+                        background: -webkit-linear-gradient(45deg, #B92454, #E83871);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: 600;
+                    }
+
+                    &.hide-button {
+                        background-color: $white;
+                        border: 1px solid $white;
+                    }
+
+                    &.show-button {
+                        background: $black;                
+                        border: 1px solid #343434;
+                        box-sizing: border-box;                
+                    }
+                }
+            }
+
+            &-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 30px;
+    
+                span {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $white;
+                    margin: 10px;
+                    opacity: .3;
+                    transition: ease-in-out .3s;
+
+                    &.possible {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
